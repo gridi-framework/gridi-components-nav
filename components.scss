@@ -1,0 +1,36 @@
+@include navigation-style() {
+    display: block;
+    @include include-element-margin($gridi-components-navigation-margin-top, $gridi-components-navigation-margin-bottom, $gridi-components-navigation-margin-left, $gridi-components-navigation-margin-right, $gridi-components-navigation-margin-for-screens);
+    border: 0;
+    padding: 0;
+    
+    @include navigation-sub-nav-style() {
+        display: block;
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+
+    @include navigation-item-style() {
+        display: block;
+        margin: $gridi-components-navigation-space-between-items 0 0;
+        border: 0;
+        padding: 0;
+    }
+
+    > {
+        @include navigation-item-style() { 
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    @include navigation-link-style() {
+        display: block;
+        margin: 0;
+        border: 0;
+        padding: $gridi-components-navigation-item-link-padding;
+        text-decoration: none;
+    }
+}

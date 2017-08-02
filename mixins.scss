@@ -1,0 +1,63 @@
+@mixin navigation-style() {
+    #{$gridi-components-navigation-selector} {
+        @content;
+    }
+}
+
+@mixin navigation-sub-nav-style() {
+    #{$gridi-components-navigation-sub-nav-selector} {
+        @content;
+    }
+}
+
+@mixin navigation-item-style() {
+    #{$gridi-components-navigation-item-selector} {
+        @content;
+    }
+}
+
+@mixin navigation-item-active-style() {
+    #{$gridi-components-navigation-item-selector} {
+        &.#{$gridi-components-navigation-item-active-class} {
+            @content;
+        }
+    }
+}
+
+@mixin navigation-item-focus-style() {
+    #{$gridi-components-navigation-item-selector} {
+        &.#{$gridi-components-navigation-item-focus-class} {
+            @content;
+        }
+    }
+}
+
+@mixin navigation-item-disabled-style() {
+    #{$gridi-components-navigation-item-selector} {
+        &.#{$gridi-components-navigation-item-disabled-class} {
+            @content;
+        }
+    }
+}
+
+@mixin navigation-item-has-sub-nav-style() {
+    #{$gridi-components-navigation-item-selector} {
+        &.#{$gridi-components-navigation-item-has-sub-nav-class} {
+            @content;
+        }
+    }
+}
+
+@mixin navigation-item-open-sub-nav-style() {
+    #{$gridi-components-navigation-item-selector} {
+        &.#{$gridi-components-navigation-item-open-sub-nav-class} {
+            @content;
+        }
+    }
+}
+
+@mixin navigation-link-style() {
+    #{$gridi-components-navigation-item-link-selector} {
+        @content;
+    }
+}
